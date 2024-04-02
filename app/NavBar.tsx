@@ -28,7 +28,6 @@ const NavigationBar = () => {
                 "text-zinc-900": link.href === currentPath,
                 "hover:text-zinc-800,transition-colors": true,
               })}
-              //   className={`${currentPath === link.href ? "text-zinc-800" : "text-zinc-500"}  " hover:text-zinc-800 transition-colors"`}
               href={link.href}>
               {link.label}
             </Link>
