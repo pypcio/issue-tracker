@@ -1,5 +1,4 @@
-import ErrorMessage from "@/app/components/ErrorMessage";
-import { Callout, TextField, Button, Skeleton, Text, Box, Container, Flex } from "@radix-ui/themes";
+import { Container, Flex, Skeleton, Text } from "@radix-ui/themes";
 
 const NewIssueLoadingPage = () => {
   return (
