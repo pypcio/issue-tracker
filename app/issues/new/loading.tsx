@@ -1,7 +1,27 @@
-import React from "react";
+import ErrorMessage from "@/app/components/ErrorMessage";
+import { Callout, TextField, Button, Skeleton, Text, Box, Container, Flex } from "@radix-ui/themes";
 
 const NewIssueLoadingPage = () => {
-  return <div>Loading...</div>;
+  return (
+    <Container size='1' align='left'>
+      <Flex direction='column' gap='3' justify='start'>
+        <Text>
+          <Skeleton className='text-xl'>Lorem ipsum dolor sit amet</Skeleton>
+        </Text>
+        <Text>
+          <Skeleton className='text-xl'>Lorem ipsum</Skeleton>
+        </Text>
+
+        <Skeleton>
+          <Text className='text-xl'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque felis tellus,
+            efficitur id convallis a, viverra eget libero. Nam magna erat, fringilla sed commodo
+            sed, aliquet nec magna.
+          </Text>
+        </Skeleton>
+      </Flex>
+    </Container>
+  );
 };
 
 export default NewIssueLoadingPage;
